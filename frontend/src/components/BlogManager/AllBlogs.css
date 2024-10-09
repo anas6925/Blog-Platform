@@ -1,0 +1,124 @@
+/* AllBlogs.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color:black;
+}
+
+.blog-manager {
+  width: 100%;
+  padding: 20px;
+  max-width: 1200px; /* Optional max-width for larger screens */
+  margin: 0 auto; /* Center the content */
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.loading-indicator,
+.no-blogs {
+  text-align: center;
+  color: #777;
+}
+
+.blog-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between blog cards */
+}
+
+.blog-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.blog-card:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.blog-title {
+  margin: 0 0 10px;
+  font-size: 1.8em;
+  color: #007BFF; /* Blue color for titles */
+}
+
+.blog-content {
+  font-size: 1em;
+  color: #555;
+}
+
+.blog-author {
+  font-style: italic;
+  color: #777;
+}
+
+.comments-title {
+  margin: 10px 0;
+  color: #333;
+}
+
+.comments-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comment-item {
+  margin-bottom: 5px;
+}
+
+.comment-author {
+  color: #007BFF; /* Blue color for comment authors */
+}
+
+.comment-text {
+  color: #555;
+}
+
+.comment-toggle-button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-toggle-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.comment-input-container {
+  margin-top: 10px;
+}
+
+.comment-input {
+  padding: 10px;
+  width: calc(100% - 22px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.submit-comment-button {
+  padding: 10px 15px;
+  background-color: #28a745; /* Green color */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-comment-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
