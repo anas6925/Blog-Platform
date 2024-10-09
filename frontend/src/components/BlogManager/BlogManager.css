@@ -1,0 +1,189 @@
+/* Base styling for body */
+body {
+    background-color: #f8f9fa; /* Light background for contrast */
+    font-family: Arial, sans-serif; /* Global font style */
+  }
+  
+  /* Container for the blog manager */
+  .blog-manager {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    max-width: 600px; /* Set max width for better responsiveness */
+    margin: 2rem auto; /* Center the container */
+  }
+  
+  /* Hover effect for the container */
+  .blog-manager:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Title styling */
+  .blog-manager h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for title */
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Form styling */
+  .blog-form {
+    width: 100%;
+    padding: 20px; /* Padding for form */
+  }
+  
+  /* Input field styling */
+  .blog-form input,
+  .blog-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #74ebd5; /* Light border */
+    border-radius: 6px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+    margin-bottom: 20px; /* Spacing between fields */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  }
+  
+  /* Input focus state */
+  .blog-form input:focus,
+  .blog-form textarea:focus {
+    border-color: #9face6; /* Border color on focus */
+    box-shadow: 0 0 5px rgba(116, 235, 213, 0.5); /* Shadow on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Button styling */
+  .blog-form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #007bff, #00c6ff); /* Gradient background */
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    color: #ffffff; /* Text color */
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer; /* Pointer cursor for button */
+    transition: background 0.3s, transform 0.2s; /* Smooth transition */
+  }
+  
+  /* Button hover effect */
+  .blog-form button:hover {
+    background: linear-gradient(90deg, #0056b3, #0099cc); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Lift effect */
+  }
+  
+  /* Button active state */
+  .blog-form button:active {
+    background: linear-gradient(90deg, #004494, #0082a8); /* Darker gradient when active */
+  }
+  
+  /* Additional styling for loading indicator */
+  .loading-indicator {
+    text-align: center;
+    color: #007bff; /* Loading text color */
+    font-weight: bold;
+  }
+  
+
+  /* Container for blog cards */
+.blog-cards-container {
+    display: grid; /* Use grid layout for better card arrangement */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between cards */
+    margin-top: 20px; /* Space above the card container */
+  }
+  
+  /* Individual blog card styling */
+.blog-card {
+    background: white; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Smooth hover effect */
+    display: flex;
+    flex-direction: column; /* Column layout */
+    justify-content: space-between; /* Space between elements */
+  }
+  
+  /* Hover effect for the card */
+  .blog-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  /* Title styling */
+  .blog-title {
+    font-size: 1.5rem; /* Increased title size */
+    margin: 0; /* Remove default margin */
+    color: #333; /* Dark text for title */
+    font-weight: bold; /* Bold title */
+    text-transform: uppercase; /* Uppercase for a stronger impact */
+    letter-spacing: 1px; /* Slight spacing between letters */
+  }
+  
+  /* Content styling */
+  .blog-content {
+    font-size: 1.1rem; /* Slightly larger size for content */
+    color: #555; /* Slightly lighter color for content */
+    margin: 10px 0; /* Space above and below content */
+  }
+  
+  /* Author styling */
+  .blog-author {
+    margin-top: 10px; /* Space above the author text */
+    font-weight: bold; /* Bold author text */
+    color: rgba(0, 0, 0, 0.619); /* Bright blue color for author */
+    font-size: 1.1rem; /* Larger font size for the author's name */
+  }
+  
+  /* Action Buttons Container */
+  .action-buttons {
+    display: flex; /* Use flexbox to align buttons */
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 15px; /* Space above the buttons */
+  }
+  
+  /* Styling for action buttons */
+  .action-button {
+    margin-left: 10px; /* Space between buttons */
+    padding: 10px 15px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 0.9rem; /* Smaller font size for buttons */
+  }
+  
+  /* Edit button styles */
+  .edit {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text color */
+  }
+  
+  /* Delete button styles */
+  .delete {
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white; /* White text color */
+  }
+  
+  /* Adjust button styles on hover */
+  .edit:hover {
+    background-color: #0056b3; /* Darker on hover */
+  }
+  
+  .delete:hover {
+    background-color: #c82333; /* Darker on hover */
+  }
+  
+  /* Styling for the "See More" link */
+  .see-more {
+    color: #007bff; /* Blue color for "See More" link */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: underline; /* Underline effect */
+  }
+  
